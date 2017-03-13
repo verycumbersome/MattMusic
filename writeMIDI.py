@@ -11,33 +11,33 @@ class Midi():
         self.midiFile.addTrackName(track, time, "Sample Track")
         self.midiFile.addTempo(track, time, 120)
 
-        channel = 1
+        channel = 4
         volume = 100
 
         pitch = root-24
         time = chordStart
-        duration = 2
+        duration = 4
         self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
         pitch = root
         time = chordStart
-        duration = 2
+        duration = 4
         self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
         pitch = third
         time = chordStart
-        duration = 2
+        duration = 4
         self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
         pitch = fifth
         time = chordStart
-        duration = 2
+        duration = 4
         self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
         if colorTone is not None:
             pitch = colorTone
             time = chordStart
-            duration = 2
+            duration = 4
             self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
     def WriteMidiToFile(self):

@@ -3,8 +3,14 @@ import json
 import random
 import writeMIDI
 import time
+import argparse
 
 from collections import Counter
+
+parser = argparse.ArgumentParser(description='argparser for MattMusic code')
+parser.add_argument('-c', '--complexity', help='complexity of progression', type=int, default=7)
+parser.add_argument('-l', '--length', help='length in measures of progression', type=int, default=4)
+args = parser.parse_args()
 
 def Main(startingChord, complexity, length):
     topProbabilities = {}
@@ -32,10 +38,10 @@ def Main(startingChord, complexity, length):
         print tempChord
 
         topProbabilities = {}
-        MIDInstance.writeMidiChord(chordMIDI[str(tempChord)]['root'], chordMIDI[str(tempChord)]['third'], chordMIDI[str(tempChord)]['fifth'], (chords-1)*2, chordMIDI[str(tempChord)]['colorTone'])
+        MIDInstance.writeMidiChord(chordMIDI[str(tempChord)]['root'], chordMIDI[str(tempChord)]['third'], chordMIDI[str(tempChord)]['fifth'], (chords-1)*4, chordMIDI[str(tempChord)]['colorTone'])
 
-        time.sleep(1)           #this is to stop the "Too many requests" issue
+        time.sleep(0.1)           #this is to stop the "Too many requests" issue
 
     MIDInstance.WriteMidiToFile()
 
-Main(1, 7, 4)
+Main(1, args.complexity, args.length)             #Main(Starting Chord, Compleity of Progression, Length of Progression)

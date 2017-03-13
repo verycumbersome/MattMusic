@@ -26,13 +26,13 @@
     "5":{
       "root":67,
       "third":71,
-      "fifth":74,
+      "fifth":62,
       "colorTone":null
     },
     "6":{
       "root":69,
       "third":72,
-      "fifth":76,
+      "fifth":64,
       "colorTone":null
     },
     "7":{
@@ -63,6 +63,12 @@
       "root":69,
       "third":72,
       "fifth":76,
-      "colorTone":79
+      "colorTone":67
+    },
+    "47":{
+      "root":65,
+      "third":69,
+      "fifth":72,
+      "colorTone":76
     }
 }
