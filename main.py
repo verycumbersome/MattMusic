@@ -1,16 +1,20 @@
 import getNextChord
 import json
 import random
-from collections import OrderedDict
+import writeMIDI
 from collections import Counter
 
 def Main(startingChord, complexity, length):
     topProbabilities = {}
     progression = []
 
+    MIDInstance = writeMIDI.Midi()
+
     getNextChord.findProgression(startingChord)
     progression.append(startingChord)
 
+    with open('chords.json') as chordsJSON:
+        chordMIDI = json.load(chordsJSON)
     #finds top most probable chord selections
     for chords in range(length):
         with open('chordProbabilities.json') as probabilities:
@@ -24,4 +28,6 @@ def Main(startingChord, complexity, length):
         getNextChord.findProgression(tempChord)
         print tempChord
         topProbabilities = {}
-Main(1, 4, 4)
+        MIDInstance.writeMidiChord(chordMIDI[str(tempChord)]['root'], chordMIDI[str(tempChord)]['third'], chordMIDI[str(tempChord)]['fifth'], (chords-1)*2, chordMIDI[str(tempChord)]['colorTone'])
+    MIDInstance.WriteMidiToFile()
+Main(1, 5, 4)
