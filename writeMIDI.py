@@ -5,36 +5,41 @@ class Midi():
         self.midiFile = MIDIFile(1)
 
     def writeMidiChord(self, root, third, fifth, chordStart, colorTone=None):
-        track = 0   # the only track
+        track = 0
 
-        time = 0    # start at the beginning
+        time = 0
         self.midiFile.addTrackName(track, time, "Sample Track")
         self.midiFile.addTempo(track, time, 120)
 
-        channel = 0
+        channel = 1
         volume = 100
 
-        pitch = root           # C4 (middle C)
-        time = chordStart             # start on beat 0
-        duration = 2         # 1 beat long
+        pitch = root-24
+        time = chordStart
+        duration = 2
         self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
-        pitch = third          # E4
-        time = chordStart             # start on beat 2
-        duration = 2         # 1 beat long
+        pitch = root
+        time = chordStart
+        duration = 2
         self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
-        pitch = fifth           # G4
-        time = chordStart             # start on beat 4
-        duration = 2         # 1 beat long
+        pitch = third
+        time = chordStart
+        duration = 2
+        self.midiFile.addNote(track, channel, pitch, time, duration, volume)
+
+        pitch = fifth
+        time = chordStart
+        duration = 2
         self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
         if colorTone is not None:
-            pitch = colorTone           # G4
-            time = chordStart             # start on beat 4
-            duration = 1         # 1 beat long
+            pitch = colorTone
+            time = chordStart
+            duration = 2
             self.midiFile.addNote(track, channel, pitch, time, duration, volume)
 
     def WriteMidiToFile(self):
-        with open("output.mid", 'wb') as outf:
+        with open("MIDI/output.mid", 'wb') as outf:
             self.midiFile.writeFile(outf)

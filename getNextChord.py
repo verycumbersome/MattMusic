@@ -2,7 +2,7 @@ import json
 import urllib2
 
 def findProgression(chord):
-    with open('credentials.json') as data_file:
+    with open('config/credentials.json') as data_file:
        data = json.load(data_file)
 
     req = urllib2.Request("https://api.hooktheory.com/v1/users/auth", json.dumps(data), headers={'Content-type': 'application/json', 'Accept': 'application/json'})
@@ -13,7 +13,5 @@ def findProgression(chord):
     openTrends = urllib2.urlopen(trends)
     nextChord = openTrends.read()
 
-    with open('chordProbabilities.json', 'w') as chordProbabilities:
+    with open('config/chordProbabilities.json', 'w') as chordProbabilities:
         json.dump(json.loads(nextChord), chordProbabilities, indent=4, sort_keys=True)
-
-    #print nextChord

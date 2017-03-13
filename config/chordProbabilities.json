@@ -1,0 +1,242 @@
+[
+    {
+        "child_path": "264,6", 
+        "chord_HTML": "vi", 
+        "chord_ID": "6", 
+        "probability": 0.199
+    }, 
+    {
+        "child_path": "264,5", 
+        "chord_HTML": "V", 
+        "chord_ID": "5", 
+        "probability": 0.106
+    }, 
+    {
+        "child_path": "264,2", 
+        "chord_HTML": "ii", 
+        "chord_ID": "2", 
+        "probability": 0.066
+    }, 
+    {
+        "child_path": "264,242", 
+        "chord_HTML": "ii<sup>4</sup><sub>2</sub>", 
+        "chord_ID": "242", 
+        "probability": 0.066
+    }, 
+    {
+        "child_path": "264,1", 
+        "chord_HTML": "I", 
+        "chord_ID": "1", 
+        "probability": 0.05
+    }, 
+    {
+        "child_path": "264,164", 
+        "chord_HTML": "I<sup>6</sup><sub>4</sub>", 
+        "chord_ID": "164", 
+        "probability": 0.04
+    }, 
+    {
+        "child_path": "264,67", 
+        "chord_HTML": "vi<sup>7</sup>", 
+        "chord_ID": "67", 
+        "probability": 0.037
+    }, 
+    {
+        "child_path": "264,57", 
+        "chord_HTML": "V<sup>7</sup>", 
+        "chord_ID": "57", 
+        "probability": 0.03
+    }, 
+    {
+        "child_path": "264,4", 
+        "chord_HTML": "IV", 
+        "chord_ID": "4", 
+        "probability": 0.028
+    }, 
+    {
+        "child_path": "264,66", 
+        "chord_HTML": "vi<sup>6</sup>", 
+        "chord_ID": "66", 
+        "probability": 0.027
+    }, 
+    {
+        "child_path": "264,56/6", 
+        "chord_HTML": "V<sup>6</sup>/vi", 
+        "chord_ID": "56/6", 
+        "probability": 0.025
+    }, 
+    {
+        "child_path": "264,5/2", 
+        "chord_HTML": "V/ii", 
+        "chord_ID": "5/2", 
+        "probability": 0.024
+    }, 
+    {
+        "child_path": "264,26", 
+        "chord_HTML": "ii<sup>6</sup>", 
+        "chord_ID": "26", 
+        "probability": 0.022
+    }, 
+    {
+        "child_path": "264,36", 
+        "chord_HTML": "iii<sup>6</sup>", 
+        "chord_ID": "36", 
+        "probability": 0.022
+    }, 
+    {
+        "child_path": "264,464", 
+        "chord_HTML": "IV<sup>6</sup><sub>4</sub>", 
+        "chord_ID": "464", 
+        "probability": 0.02
+    }, 
+    {
+        "child_path": "264,364", 
+        "chord_HTML": "iii<sup>6</sup><sub>4</sub>", 
+        "chord_ID": "364", 
+        "probability": 0.016
+    }, 
+    {
+        "child_path": "264,56", 
+        "chord_HTML": "V<sup>6</sup>", 
+        "chord_ID": "56", 
+        "probability": 0.016
+    }, 
+    {
+        "child_path": "264,27", 
+        "chord_HTML": "ii<sup>7</sup>", 
+        "chord_ID": "27", 
+        "probability": 0.015
+    }, 
+    {
+        "child_path": "264,57/2", 
+        "chord_HTML": "V<sup>7</sup>/ii", 
+        "chord_ID": "57/2", 
+        "probability": 0.013
+    }, 
+    {
+        "child_path": "264,b7", 
+        "chord_HTML": "&#9837;VII", 
+        "chord_ID": "b7", 
+        "probability": 0.011
+    }, 
+    {
+        "child_path": "264,7", 
+        "chord_HTML": "vii&deg;", 
+        "chord_ID": "7", 
+        "probability": 0.01
+    }, 
+    {
+        "child_path": "264,5/6", 
+        "chord_HTML": "V/vi", 
+        "chord_ID": "5/6", 
+        "probability": 0.01
+    }, 
+    {
+        "child_path": "264,16", 
+        "chord_HTML": "I<sup>6</sup>", 
+        "chord_ID": "16", 
+        "probability": 0.009
+    }, 
+    {
+        "child_path": "264,56/2", 
+        "chord_HTML": "V<sup>6</sup>/ii", 
+        "chord_ID": "56/2", 
+        "probability": 0.007
+    }, 
+    {
+        "child_path": "264,37", 
+        "chord_HTML": "iii<sup>7</sup>", 
+        "chord_ID": "37", 
+        "probability": 0.007
+    }, 
+    {
+        "child_path": "264,57/3", 
+        "chord_HTML": "V<sup>7</sup>/iii", 
+        "chord_ID": "57/3", 
+        "probability": 0.005
+    }, 
+    {
+        "child_path": "264,564/6", 
+        "chord_HTML": "V<sup>6</sup><sub>4</sub>/vi", 
+        "chord_ID": "564/6", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,4/3", 
+        "chord_HTML": "IV/iii", 
+        "chord_ID": "4/3", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,5/5", 
+        "chord_HTML": "V/V", 
+        "chord_ID": "5/5", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,565/6", 
+        "chord_HTML": "V<sup>6</sup><sub>5</sub>/vi", 
+        "chord_ID": "565/6", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,76", 
+        "chord_HTML": "vii&deg;<sup>6</sup>", 
+        "chord_ID": "76", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,b76", 
+        "chord_HTML": "&#9837;VII<sup>6</sup>", 
+        "chord_ID": "b76", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,46", 
+        "chord_HTML": "IV<sup>6</sup>", 
+        "chord_ID": "46", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,L3", 
+        "chord_HTML": "iii", 
+        "chord_ID": "L3", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,265", 
+        "chord_HTML": "ii<sup>6</sup><sub>5</sub>", 
+        "chord_ID": "265", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,57/5", 
+        "chord_HTML": "V<sup>7</sup>/V", 
+        "chord_ID": "57/5", 
+        "probability": 0.004
+    }, 
+    {
+        "child_path": "264,b47", 
+        "chord_HTML": "iv<sup>7</sup>", 
+        "chord_ID": "b47", 
+        "probability": 0.003
+    }, 
+    {
+        "child_path": "264,77", 
+        "chord_HTML": "vii<sup>\u00f8</sup><sup>7</sup>", 
+        "chord_ID": "77", 
+        "probability": 0.002
+    }, 
+    {
+        "child_path": "264,57/4", 
+        "chord_HTML": "V<sup>7</sup>/IV", 
+        "chord_ID": "57/4", 
+        "probability": 0.001
+    }, 
+    {
+        "child_path": "264,76/3", 
+        "chord_HTML": "vii&deg;<sup>6</sup>/iii", 
+        "chord_ID": "76/3", 
+        "probability": 0.001
+    }
+]
