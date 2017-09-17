@@ -53,6 +53,18 @@
       "fifth":69,
       "colorTone":72
     },
+    "37":{
+      "root":64,
+      "third":67,
+      "fifth":71,
+      "colorTone":74
+    },
+    "47":{
+      "root":65,
+      "third":69,
+      "fifth":72,
+      "colorTone":76
+    },
     "56":{
       "root":67,
       "third":71,
@@ -64,11 +76,5 @@
       "third":72,
       "fifth":76,
       "colorTone":67
-    },
-    "47":{
-      "root":65,
-      "third":69,
-      "fifth":72,
-      "colorTone":76
     }
 }

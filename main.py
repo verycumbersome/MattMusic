@@ -10,9 +10,10 @@ from collections import Counter
 parser = argparse.ArgumentParser(description='argparser for MattMusic code')
 parser.add_argument('-c', '--complexity', help='complexity of progression', type=int, default=7)
 parser.add_argument('-l', '--length', help='length in measures of progression', type=int, default=4)
+parser.add_argument('-w', '--waitTime', help='sets wait time for API request', type=int, default=1)
 args = parser.parse_args()
 
-def Main(startingChord, complexity, length):
+def main(startingChord, complexity, length):
     topProbabilities = {}
     progression = []
 
@@ -40,8 +41,9 @@ def Main(startingChord, complexity, length):
         topProbabilities = {}
         MIDInstance.writeMidiChord(chordMIDI[str(tempChord)]['root'], chordMIDI[str(tempChord)]['third'], chordMIDI[str(tempChord)]['fifth'], (chords-1)*4, chordMIDI[str(tempChord)]['colorTone'])
 
-        time.sleep(0.1)           #this is to stop the "Too many requests" issue
+        time.sleep(args.waitTime)           #this is to stop the "Too many requests" issue
 
     MIDInstance.WriteMidiToFile()
 
-Main(1, args.complexity, args.length)             #Main(Starting Chord, Compleity of Progression, Length of Progression)
+if __name__ == '__main__':
+    main(1, args.complexity, args.length)             #Main(Starting Chord, Compleity of Progression, Length of Progression)
